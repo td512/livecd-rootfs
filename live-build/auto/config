@@ -40,7 +40,7 @@ if [ -z "$MIRROR" ]; then
 		*)
 			case $ARCH in
 				i386|amd64)	MIRROR=http://archive.ubuntu.com/ubuntu/ ;;
-				*)		MIRROR=http://ports.ubuntu.com/ubuntu-ports/ ;;
+				*)		MIRROR=http://deb.debian.org/debian/ ;;
 			esac
 			;;
 	esac
