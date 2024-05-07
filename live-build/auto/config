@@ -626,16 +626,16 @@ case $PROJECT in
 		COMPONENTS='main'
 		;;
 	edubuntu|kubuntu|ubuntu-budgie|ubuntucinnamon|ubuntukylin)
-		COMPONENTS='main restricted universe'
+		COMPONENTS='main non-free non-free-firmware contrib'
 		;;
 	lubuntu|ubuntu-mate|ubuntu-unity|ubuntustudio-dvd|xubuntu)
-		COMPONENTS='main restricted universe multiverse'
+		COMPONENTS='main non-free non-free-firmware contrib'
 		;;
 esac
 
 case $SUBPROJECT in
 	buildd)
-		COMPONENTS='main restricted universe multiverse'
+		COMPONENTS='main non-free non-free-firmware contrib'
 		;;
 esac
 
