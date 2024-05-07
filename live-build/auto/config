@@ -640,6 +640,10 @@ case $SUBPROJECT in
 esac
 
 if ! [ -e config/germinate-output/structure ]; then
+echo $PROJECT
+echo $SUBPROJECT
+echo $COMPONENTS
+echo 
         echo "Running germinate..."
         if [ -n "$COMPONENTS" ]; then
 		GERMINATE_ARG="-c $(echo $COMPONENTS | sed -e's/ \+/,/g')"
